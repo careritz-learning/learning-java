@@ -1,0 +1,8 @@
+apply plugin: 'application'
+
+group = 'jp.co.careritztc.java-training'
+version = '0.0.1-SNAPSHOT'
+
+application {
+  mainClass = 'jp.co.careritztc.exercise1.Exercise11Main'
+}

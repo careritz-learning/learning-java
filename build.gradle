@@ -1,0 +1,43 @@
+apply plugin: 'eclipse'
+
+group = 'jp.co.careritztc.learning-java'
+version = '0.0.1-SNAPSHOT'
+
+allprojects {
+  repositories {
+    // You can declare any Maven/Ivy/file repository here.
+    mavenCentral()
+  }
+}
+
+subprojects {
+  apply plugin: 'java'
+  apply plugin: 'checkstyle'
+
+  ext {
+    set('lombokVersion', '1.18.24')
+    set('checkstyleVersion', '10.4')
+  }
+
+  java {
+    toolchain {
+      languageVersion = JavaLanguageVersion.of(17)
+    }
+  }
+
+  checkstyle {
+    configFile = file("${rootProject.projectDir}/config/checkstyle/google_checks_custom.xml")
+    toolVersion = "${checkstyleVersion}"
+    ignoreFailures = true
+    // disable checkstyle rules for tests
+    checkstyleTest.enabled = false
+  }
+  
+  dependencies {
+    // used to reduce boilerplate code
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+  }
+}

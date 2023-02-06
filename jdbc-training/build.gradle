@@ -1,0 +1,17 @@
+apply plugin: 'application'
+
+group = 'jp.co.careritztc.jdbc-training'
+version = '0.0.1-SNAPSHOT'
+
+application {
+  mainClass = 'jp.co.careritztc.HelloMysql'
+}
+
+dependencies {
+  // make efficient
+  // implementation 'org.apache.commons:commons-lang3'
+  // jdbc drivers
+  // implementation "com.oracle.database.jdbc:ojdbc11"
+  // implementation "com.oracle.database.nls:orai18n"
+  implementation 'com.mysql:mysql-connector-j:8.0.32'
+}
