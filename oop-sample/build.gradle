@@ -1,0 +1,8 @@
+apply plugin: 'application'
+
+group = 'jp.co.careritztc.game'
+version = '0.0.1-SNAPSHOT'
+
+application {
+  mainClass = 'jp.co.careritztc.game.OopSample'
+}

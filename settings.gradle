@@ -1,0 +1,12 @@
+pluginManagement {
+  repositories {
+    gradlePluginPortal()
+  }
+}
+
+rootProject.name = 'learning-java'
+
+include "hello-world"
+include "oop-sample"
+include "java-training"
+include "jdbc-training"

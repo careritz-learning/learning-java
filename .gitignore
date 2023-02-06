@@ -1,0 +1,72 @@
+# Package Files #
+*.jar
+*.war
+*.ear
+
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Logs and databases #
+######################
+*.log
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Editor Files #
+################
+*~
+*.swp
+
+# Gradle Files
+**/.gradle/
+!gradle-wrapper.jar
+# Gradle temporary files
+**/target/
+
+
+/build/
+/bin/
+/lib/
+/logs/
+/var/
+
+#.devcontainer
+**/.devcontainer/sonarqube/extensions/
+!**/.devcontainer/sonarqube/extensions/downloads/.gitkeep
+!**/.devcontainer/sonarqube/extensions/plugins/.gitkeep
+
+#Eclipse files
+**/.project
+**/.classpath
+**/.settings/
+**/.tern-project
+!**/.settings/org.eclipse.jdt.core.prefs
+!**/.settings/org.eclipse.jdt.ui.prefs
+
+#IntelliJ files
+**/*.iml
+**/.idea
+
+#vscode files
+**/.vscode/
+!**/.vscode/extensions.json
+!**/.vscode/launch.json
+!**/.vscode/sandbox.code-workspace
+!**/.vscode/setting.json
+!**/.vscode/cspell.json
+**/ApexSQL/
+**/Quest/
+
+**/build
+hello-world/bin
+java-training/bin
+jdbc-training/bin
+oop-sample/bin
+sql-training/bin
