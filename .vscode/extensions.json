@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "vscjava.vscode-java-pack",
+        "shengchen.vscode-checkstyle",
+        "vscjava.vscode-lombok",
+        "donjayamanne.git-extension-pack",
+        "vscjava.vscode-gradle",
+        "ms-azuretools.vscode-docker"
+    ]
+}
