@@ -13,8 +13,8 @@ services:
         reservations:
           memory: 1G
     ports:
-      - 127.0.0.1:3306:3306
-      - 127.0.0.1:33060:33060
+      - 3306:3306
+      - 33060:33060
     environment:
       - MYSQL_ROOT_USER=root
       - MYSQL_ROOT_PASSWORD=learn55
